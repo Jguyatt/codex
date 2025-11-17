@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/.vscode
+/src-tauri/target
+/src-tauri/**/*.log
+.env
+.DS_Store
+*.sqlite
