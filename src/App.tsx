@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react';
-import { invoke } from '@tauri-apps/api/tauri';
 import { FolderPicker } from './components/FolderPicker';
 import { ScanProgress } from './components/ScanProgress';
 import { PreviewTable } from './components/PreviewTable';
@@ -63,7 +62,9 @@ function App() {
               return;
             }
             try {
-              const summary = await invoke<{ restored: number; log_path?: string }>('undo_last_run');
+              const summary = await (window as any).__TAURI__.invoke<{ restored: number; log_path?: string }>(
+                'undo_last_run'
+              );
               setApplySummary(
                 `Restored ${summary.restored} moves from ${summary.log_path ?? 'latest log'}`
               );
