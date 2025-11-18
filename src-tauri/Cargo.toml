@@ -1,0 +1,19 @@
+[package]
+name = "clarifile"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tauri = { version = "1.5", features = ["dialog-all", "fs-all", "shell-open"] }
+walkdir = "2.5"
+chrono = { version = "0.4", features = ["serde"] }
+dirs = "5.0"
+thiserror = "1.0"
+base64 = "0.22"
+rand = "0.8"
+anyhow = "1.0"

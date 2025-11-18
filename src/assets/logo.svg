@@ -1,0 +1,6 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clarifile logo">
+  <rect x="8" y="8" width="112" height="112" rx="20" fill="#EDF2F7" stroke="#2B6CB0" stroke-width="8" />
+  <rect x="32" y="40" width="64" height="10" rx="5" fill="#2B6CB0" />
+  <rect x="32" y="60" width="52" height="10" rx="5" fill="#38B2AC" />
+  <rect x="32" y="80" width="40" height="10" rx="5" fill="#4A5568" />
+</svg>
